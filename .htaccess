@@ -1,0 +1,41 @@
+# 1) FORÇAR HTTPS E 2) PADRONIZAR WWW
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirecionar HTTP para HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Redirecionar www para não-www
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+</IfModule>
+
+# 3) PÁGINA 404 PERSONALIZADA (Retorna para Home)
+ErrorDocument 404 /index.html
+
+# 4) COMPRESSÃO GZIP/DEFLATE
+<IfModule mod_deflate.c>
+    # Compressão de HTML, CSS, JS, Text, XML, Fontes, SVGs e JSONs
+    AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/xml application/xhtml+xml text/javascript application/javascript application/x-javascript application/json image/svg+xml font/ttf font/otf font/woff font/woff2
+</IfModule>
+
+# 5) CACHE DE NAVEGADOR (Com regras restritas de Cache-Busting)
+<IfModule mod_headers.c>
+    # Mídias e Imagens (jpg, jpeg, png, webp, svg, gif) - 1 Mês estático
+    <FilesMatch "\.(jpg|jpeg|png|webp|svg|gif|ico)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+
+    # CSS e JS - 1 Semana estático
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+
+    # HTML - NUNCA gerenciar cache (Reflete atualizações em tempo real)
+    <FilesMatch "\.(html|htm|json|xml)$">
+        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+</IfModule>
