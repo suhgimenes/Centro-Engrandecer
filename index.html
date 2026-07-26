@@ -259,8 +259,7 @@
                 <a href="#servicos"
                     class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors">Mentalidade</a>
                 <a href="#como-funciona"
-                    class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors">O
-                    Método</a>
+                    class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors">Método</a>
                 <a href="#sobre"
                     class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors">Sobre</a>
                 <a href="#faq"
@@ -297,8 +296,7 @@
             <div class="px-8 py-10 flex flex-col space-y-8 items-center">
                 <a @click="mobileMenuOpen = false" href="#servicos"
                     class="text-sm uppercase tracking-widest">Mentalidade</a>
-                <a @click="mobileMenuOpen = false" href="#como-funciona" class="text-sm uppercase tracking-widest">O
-                    Método</a>
+                <a @click="mobileMenuOpen = false" href="#como-funciona" class="text-sm uppercase tracking-widest">Método</a>
                 <a @click="mobileMenuOpen = false" href="#sobre" class="text-sm uppercase tracking-widest">Sobre</a>
                 <a @click="mobileMenuOpen = false" href="#faq" class="text-sm uppercase tracking-widest">FAQ</a>
                 <a @click="mobileMenuOpen = false" href="#blog" class="text-sm uppercase tracking-widest">Blog</a>
@@ -700,12 +698,10 @@
             <div class="container mx-auto px-6">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6 leading-tight">Psicóloga para
-                            empresárias em Valinhos e Atendimento Online.</h2>
+                        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6 leading-tight">Mentora para Empresárias e Profissionais Liberais em todo Brasil.</h2>
                         <div class="space-y-4 text-gray-600 text-lg mb-8">
-                            <p>O Centro Engrandecer possui sede digital, atendendo clientes com agilidade em Valinhos
-                                (SP), região de Campinas e empreendedoras brasileiras espalhadas pelo mundo. Unimos a
-                                proximidade do atendimento humanizado à praticidade do ambiente virtual.</p>
+                            <p class="font-semibold text-primary">Agende sua consulta.</p>
+                            <p>O Centro Engrandecer atende empresárias e profissionais liberais com agilidade em Valinhos (SP), região de Campinas e em todo o Brasil e no mundo através do atendimento presencial e virtual.</p>
                         </div>
 
                         <div class="space-y-4 bg-secondary/50 p-6 rounded-2xl border border-secondary">
@@ -719,8 +715,8 @@
                                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                 </svg>
                                 <div>
-                                    <span class="block font-bold text-dark">Endereço</span>
-                                    <span class="text-gray-600">Atendimento Online (Valinhos - SP)</span>
+                                    <span class="block font-bold text-dark">Onde Estamos</span>
+                                    <span class="text-gray-600">Rua Luís Spaiandorelli, Torre Paineira, Valinhos, SP.</span>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4">
@@ -750,22 +746,19 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Mapa Placeholder -->
+                    <!-- Mapa do Google Maps -->
                     <div
-                        class="bg-gray-200 rounded-2xl h-96 w-full flex items-center justify-center relative overflow-hidden shadow-inner">
-                        <!-- Substituir o conteúdo abaixo pelo iframe do Google Maps -->
-                        <div
-                            class="text-center z-10 bg-white/80 p-6 rounded-xl backdrop-blur-sm border border-gray-100">
-                            <svg class="w-12 h-12 text-primary mx-auto mb-2" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7">
-                                </path>
-                            </svg>
-                            <span class="font-bold text-dark block">Placeholder Exemplo</span>
-                            <span class="text-sm text-gray-500">Iframe do Google Maps deve ser inserido aqui.<br>Foco:
-                                Valinhos - SP</span>
-                        </div>
+                        class="rounded-2xl h-96 w-full overflow-hidden shadow-lg border border-maison-text/10 relative">
+                        <iframe
+                            title="Localização Centro Engrandecer no Google Maps"
+                            src="https://maps.google.com/maps?q=Rua+Lu%C3%ADs+Spaiandorelli,+Torre+Paineira,+Valinhos+-+SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
