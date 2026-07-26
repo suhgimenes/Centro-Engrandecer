@@ -249,8 +249,8 @@
             <div class="flex-1 flex justify-start">
                 <a href="#inicio" class="flex items-center">
                     <img src="./img/logo-oficial.png" alt="Logo Oficial Centro Engrandecer"
-                        class="h-28 md:h-44 w-auto object-contain transition-all duration-300"
-                        :class="{ 'h-20 md:h-28': !atTop }">
+                        class="h-32 md:h-52 w-auto object-contain transition-all duration-300"
+                        :class="{ 'h-24 md:h-36': !atTop }">
                 </a>
             </div>
 
@@ -265,6 +265,8 @@
                     class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors">Sobre</a>
                 <a href="#faq"
                     class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors">FAQ</a>
+                <a href="#blog"
+                    class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors">Blog</a>
             </div>
 
             <!-- CTA Desktop -->
@@ -299,6 +301,7 @@
                     Método</a>
                 <a @click="mobileMenuOpen = false" href="#sobre" class="text-sm uppercase tracking-widest">Sobre</a>
                 <a @click="mobileMenuOpen = false" href="#faq" class="text-sm uppercase tracking-widest">FAQ</a>
+                <a @click="mobileMenuOpen = false" href="#blog" class="text-sm uppercase tracking-widest">Blog</a>
                 <a href="https://wa.me/5519991798580" target="_blank"
                     class="bg-dark text-white w-full text-center py-4 text-xs uppercase tracking-widest font-bold">Agendar
                     Sessão</a>
@@ -328,9 +331,7 @@
                     <!-- Description -->
                     <p
                         class="font-sans text-sm md:text-base lg:text-lg text-maison-text/70 mb-12 max-w-2xl leading-relaxed tracking-wide">
-                        Desbloqueie o próximo nível do seu negócio com suporte especializado para Mulheres
-                        Empreendedoras.
-                        Unimos psicologia aplicada à alta performance para você liderar com clareza e elegância.
+                        Um espaço dedicado ao desenvolvimento emocional, profissional e estratégico de mulheres que desejam reconhecer seu valor, organizar seus próximos passos e avançar na vida e na carreira.
                     </p>
 
                     <!-- CTAs -->
@@ -392,8 +393,8 @@
                     <div class="relative animate-fade-in order-2 lg:order-1">
                         <div
                             class="aspect-[3/4] overflow-hidden grayscale-[20%] hover:grayscale-0 transition-all duration-1000">
-                            <img src="./img/autora.jpg"
-                                alt="Fundadora do Centro Engrandecer, Especialista em Desenvolvimento Humano"
+                            <img src="./img/foto carina.webp"
+                                alt="Carina Couto - Criadora do Método Engrandecer"
                                 class="w-full h-full object-cover" loading="lazy">
                         </div>
                         <div
@@ -401,20 +402,25 @@
                         </div>
                     </div>
                     <div class="order-1 lg:order-2">
-                        <span class="text-[10px] uppercase tracking-[0.4em] text-primary font-bold mb-6 block">A
+                        <span class="text-[10px] uppercase tracking-[0.4em] text-primary font-bold mb-4 block">A
                             Essência</span>
-                        <h2 class="font-serif text-3xl md:text-5xl text-maison-text mb-8 leading-tight">
-                            Por trás do Centro Engrandecer
+                        <h2 class="font-serif text-3xl md:text-5xl text-maison-text mb-3 leading-tight">
+                            Carina Couto
                         </h2>
-                        <div class="space-y-8 text-maison-text/70 text-base md:text-lg leading-relaxed font-sans">
-                            <p>
-                                A trajetória do Centro Engrandecer não nasceu de uma teoria acadêmica, mas de uma profunda superação pessoal. Por anos, meu próprio "tanquinho de autoeficácia" parecia vazio. Apesar do empenho e dos bons resultados técnicos, eu não conseguia me ver como a autoridade que meu trabalho exigia.
-                            </p>
-                            <p>
-                                A mudança real começou há cinco anos, após o nascimento da minha filha, quando decidi que não queria apenas independência financeira, mas o reconhecimento pleno do meu valor. Ao estabelecer minha prática em Valinhos, percebi que engrandecer-se — ou seja, expandir sua própria percepção de potência — é o primeiro passo para o sucesso.
-                            </p>
-                            <p>
-                                Hoje, meu propósito é ajudar mulheres a saírem da estagnação, reconhecerem sua autoridade e ocuparem seus lugares com confiança. No Centro Engrandecer, unimos estratégia à mentalidade de abundância, pois acredito que <span class="italic">se ver como autoridade caminha junto ao de fato ser uma</span>.
+                        <p class="text-primary font-bold text-xs md:text-sm uppercase tracking-[0.2em] mb-8">
+                            Mais de 18 anos de experiência
+                        </p>
+                        <div class="space-y-6 text-maison-text/80 text-base md:text-lg leading-relaxed font-sans">
+                            <div class="space-y-3">
+                                <p class="font-semibold text-maison-text">Psicóloga especialista em:</p>
+                                <ul class="space-y-2 pl-5 list-disc marker:text-primary">
+                                    <li>Terapia Cognitivo-Comportamental</li>
+                                    <li>Neurociência</li>
+                                    <li>Psicologia Positiva</li>
+                                </ul>
+                            </div>
+                            <p class="pt-4 font-serif text-2xl text-maison-text italic">
+                                Criadora do Método Engrandecer
                             </p>
                         </div>
                         <div class="mt-12">
@@ -450,12 +456,11 @@
                         </div>
                         <div class="p-10 flex-grow flex flex-col">
                             <span
-                                class="text-[9px] uppercase tracking-[0.3em] text-primary font-bold mb-4">Estratégia</span>
+                                class="text-[9px] uppercase tracking-[0.3em] text-primary font-bold mb-4">Exposição com Segurança</span>
                             <h3 id="mentoria" class="font-serif text-2xl text-maison-text mb-4 leading-tight">Mentoria
                                 Individual</h3>
                             <p class="font-sans text-sm text-maison-text/60 leading-relaxed mb-8 flex-grow">
-                                Clareza estratégica e mentalidade de alta performance para a gestão do seu negócio
-                                crescer com elegância.
+                                Desenvolvida para mulheres que buscam superar o medo do julgamento e fortalecer sua segurança emocional no ambiente profissional. Nesta mentoria, trabalhamos o reconhecimento profundo do seu real valor e o desenvolvimento da confiança necessária para você se expor de forma consistente, autêntica e estratégica no mercado, comunicando sua autoridade com clareza e alinhamento aos seus objetivos.
                             </p>
                             <a href="https://wa.me/5519991798580?text=Vim%20atrav%C3%A9s%20do%20site%2C%20e%20tenho%20interesse%20em%20agendar%20uma%20sess%C3%A3o%20individual%20para%20saber%20mais%20sobre%20a%20mentoria%20individual" target="_blank"
                                 class="text-[10px] uppercase tracking-[0.2em] font-bold border-b border-dark/10 pb-1 self-start hover:border-primary transition-all">
@@ -475,12 +480,11 @@
                         </div>
                         <div class="p-10 flex-grow flex flex-col">
                             <span
-                                class="text-[9px] uppercase tracking-[0.3em] text-primary font-bold mb-4">Clínica</span>
+                                class="text-[9px] uppercase tracking-[0.3em] text-primary font-bold mb-4">Clareza para Expansão</span>
                             <h3 id="psicoterapia" class="font-serif text-2xl text-maison-text mb-4 leading-tight">
                                 Psicoterapia Online</h3>
                             <p class="font-sans text-sm text-maison-text/60 leading-relaxed mb-8 flex-grow">
-                                Tratamento clínico com TCC para burnout, ansiedade e fortalecimento emocional da
-                                empresária moderna.
+                                Esta mentoria auxilia mulheres a desenvolverem clareza absoluta sobre sua próxima etapa profissional e pessoal. Através de um processo estruturado, você aprenderá a tomar decisões estratégicas plenamente alinhadas aos seus valores fundamentais, construindo uma expansão consistente, sustentável e próspera sem abrir mão da sua estrutura e equilíbrio emocional.
                             </p>
                             <a href="https://wa.me/5519991798580?text=Vim%20atrav%C3%A9s%20do%20site%2C%20e%20tenho%20interesse%20em%20saber%20mais%20sobre%20a%20psicoterapia%20online" target="_blank"
                                 class="text-[10px] uppercase tracking-[0.2em] font-bold border-b border-dark/10 pb-1 self-start hover:border-primary transition-all">
@@ -500,12 +504,11 @@
                         </div>
                         <div class="p-10 flex-grow flex flex-col">
                             <span
-                                class="text-[9px] uppercase tracking-[0.3em] text-primary font-bold mb-4">Networking</span>
+                                class="text-[9px] uppercase tracking-[0.3em] text-primary font-bold mb-4">Mentoria Autogestão</span>
                             <h3 id="consultoria" class="font-serif text-2xl text-maison-text mb-4 leading-tight">
                                 Consultoria em Grupo</h3>
                             <p class="font-sans text-sm text-maison-text/60 leading-relaxed mb-8 flex-grow">
-                                Encontros dinâmicos de aprendizado coletivo e networking estratégico com outras
-                                empreendedoras.
+                                Desenvolvida para fortalecer a organização, a constância e a capacidade de priorização no dia a dia da mulher empreendedora. Esta mentoria foca em transformar intenção em execução real, reduzindo a procrastinação e construindo uma rotina altamente estratégica para sustentação do crescimento profissional contínuo.
                             </p>
                             <a href="https://wa.me/5519991798580?text=Vim%20atrav%C3%A9s%20do%20site%2C%20e%20tenho%20interesse%20em%20saber%20mais%20sobre%20as%20consultorias%20em%20grupo" target="_blank"
                                 class="text-[10px] uppercase tracking-[0.2em] font-bold border-b border-dark/10 pb-1 self-start hover:border-primary transition-all">
